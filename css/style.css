@@ -8,3 +8,7 @@ body{
     width: 400px;
     height:400px;
 }
+
+.fb_iframe_widget{
+    margin-top:10px;
+}

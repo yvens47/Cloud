@@ -9,7 +9,7 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 </head>
 <body>
-  <div></div>
+ <div id="fb-root"></div>
 
   <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
@@ -34,6 +34,9 @@
   </div>
   <button type="submit" class="btn btn-default">Submit</button>
 </form>
+ <ul class="nav navbar-nav pull-right">
+            <fb:login-button autologoutlink="true" perms="user_about_me,email"></fb:login-button>
+          </ul>
         </div><!--/.nav-collapse -->
       </div>
     </nav>
@@ -42,27 +45,27 @@
   
   <div class="container">
   <div class="starter-template">
-        <h1>Bootstrap starter template</h1>
+        <h1 class="user">Welcome</h1>
         <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
       </div>
        
-        <!--<div id="canvas"></div> -->
+        <div id="canvas">
+          <ul>
+            
+          </ul>
+        </div>
+        
+      
     </div>
-  </script>
+
   
    
  <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
-
-   
-
- 
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-  <!-- to activate the test runner, add the "?test" query string parameter -->
-  <!--
   <script type="text/javascript"src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzvXLcVnqqEDjwR3XD1s61UT1usSySJsA"> </script>
-  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=places"></script>-->
-
+ <!-- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=places"></script>-->
+  <script src="https://apis.google.com/js/client.js?onload=load"></script>
      
    <script src="js/site.js"></script>
 </body>
